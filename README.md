@@ -5,14 +5,30 @@
 
 ### Liguagens
 > Escrito em...
-+ PHP / Blade (Láravel)
-+ JavaScript
+
+<table>
+    <thead>
+        <td>PHP<td>
+        <td>Láravel<td>
+        <td>Composer<td>
+        <td>MySQL<td>
+    </thead>
+
+    <tbody>
+        <td>8.*<td>
+        <td>x10<td>
+        <td>2.0<td>
+        <td>8.0<td>
+    </tbody>
+</table>
 
 ### Outras tecnologias
 + CSS (Bootstrap)
 + Jquery
 + HTML
 + MySQL
++ GIT
++ Composer
 
 > Funcionalidades Atuais
 * Registar Salas de Aulas ✅
