@@ -3,7 +3,7 @@
 
 ### Projecto: Desafio de Front-End
 > Link do projecto a funcionar:
-<h1> https://desafio.edmilsonquiala.com/public/ </h1>
+<h1> <a target="_blank" href="https://desafio.edmilsonquiala.com/public/"> Link Desafio</a> </h1>
 
 ### Liguagens
 > Escrito em...
