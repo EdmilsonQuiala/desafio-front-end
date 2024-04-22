@@ -7,7 +7,8 @@ use App\Models\SalaDeAula; // Importe o modelo SalaDeAula
 
 class MainController extends Controller
 {
-    public function home(){
+    public function home()
+    {
 
         $salas = SalaDeAula::all();
         return view('home', compact('salas'));
@@ -41,7 +42,8 @@ class MainController extends Controller
         // Redirecionamento após o registro
         return redirect()->route('home')->with('success', 'Sala registrada com sucesso!');
     }
-    public function atualizarSalas(Request $request) {
+    public function atualizarSalas(Request $request)
+    {
 
         foreach ($request->salas as $salaId => $valores) {
             $sala = SalaDeAula::findOrFail($salaId);
@@ -61,5 +63,4 @@ class MainController extends Controller
 
         return redirect()->route('home')->with('success', 'Salas atualizadas com sucesso!');
     }
-
 }

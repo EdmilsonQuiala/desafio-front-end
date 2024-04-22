@@ -1,9 +1,7 @@
 # Desafio Front-End
 > Estado: Em desenvolvimento... ⚠️
 
-### Projecto: Desafio de Front-End
-> Link do projecto a funcionar:
-<h1> <a target="_blank" href="https://desafio.edmilsonquiala.com/public/"> Link Desafio</a> </h1>
+<h1> <a target="_blank" href="https://desafio.edmilsonquiala.com/public/"> Link para visualizar o projecto online</a> </h1>
 
 ### Liguagens
 > Escrito em...

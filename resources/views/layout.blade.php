@@ -31,7 +31,8 @@
                         </li>
                         <li class="nav-item">
                             <a href="/registar-salas" class="nav-link align-middle px-0 text-dark">
-                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Registar Salas</span>
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Registar
+                                    Salas</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -93,13 +94,18 @@
                     </ul>
                     <hr>
                     <div class="dropdown pb-4">
-                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://avatars.githubusercontent.com/u/68898835?v=4" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                        <a href="#"
+                            class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://avatars.githubusercontent.com/u/68898835?v=4" alt="hugenerd"
+                                width="30" height="30" class="rounded-circle">
                             <span class="d-none d-sm-inline mx-1 text-dark">Utilizador</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
                             <li><a class="dropdown-item" href="#">Perfil</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="#">Terminar Sessão</a></li>
                         </ul>
                     </div>
@@ -118,4 +124,3 @@
 </body>
 
 </html>
-

@@ -23,20 +23,30 @@
                     </thead>
                     <tbody style="background: #EAEAEA">
 
-                            @foreach($salas as $key => $sala)
+                        @foreach ($salas as $key => $sala)
                             <tr>
                                 <td>
                                     <h6>{{ $sala->designacao }}</h6>
                                 </td>
-                                <td><input type="number" class="form-control funcionais" name="salas[{{ $sala->id }}][funcionais]" value="{{ $sala->funcionais }}" @if($key == 0) disabled @endif min="0"></td>
-                                <td><input type="number" class="form-control nao-funcionais" name="salas[{{ $sala->id }}][nao_funcionais]" value="{{ $sala->nao_funcionais }}" @if($key == 0) disabled @endif min="0"></td>
+                                <td><input type="number" class="form-control funcionais"
+                                        name="salas[{{ $sala->id }}][funcionais]" value="{{ $sala->funcionais }}"
+                                        @if ($key == 0) disabled @endif min="0"></td>
+                                <td><input type="number" class="form-control nao-funcionais"
+                                        name="salas[{{ $sala->id }}][nao_funcionais]"
+                                        value="{{ $sala->nao_funcionais }}"
+                                        @if ($key == 0) disabled @endif min="0"></td>
 
                                 <td>
-                                    <input type="hidden" class="form-control numero-total" name="salas[{{ $sala->id }}][numero_total]" value="{{ $sala->numero_total }}" @if($key != 0) @endif min="0">
-                                    <input type="number" class="form-control numero-total-show" name="salas-show[{{ $sala->id }}][numero_total]" value="{{ $sala->numero_total }}" @if($key != 0) disabled @endif min="0">
+                                    <input type="hidden" class="form-control numero-total"
+                                        name="salas[{{ $sala->id }}][numero_total]" value="{{ $sala->numero_total }}"
+                                        @if ($key != 0)  @endif min="0">
+                                    <input type="number" class="form-control numero-total-show"
+                                        name="salas-show[{{ $sala->id }}][numero_total]"
+                                        value="{{ $sala->numero_total }}" @if ($key != 0) disabled @endif
+                                        min="0">
                                 </td>
                             </tr>
-                            @endforeach
+                        @endforeach
                     </tbody>
                 </table>
                 <div class="d-flex justify-content-end">
@@ -47,18 +57,18 @@
     </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.funcionais, .nao-funcionais').on('input', function() {
-            var tr = $(this).closest('tr');
-            var funcionais = parseInt(tr.find('.funcionais').val()) || 0;
-            var naoFuncionais = parseInt(tr.find('.nao-funcionais').val()) || 0;
-            var numeroTotal = funcionais + naoFuncionais;
-            tr.find('.numero-total-show').val(numeroTotal);
-            tr.find('.numero-total').val(numeroTotal);
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.funcionais, .nao-funcionais').on('input', function() {
+                var tr = $(this).closest('tr');
+                var funcionais = parseInt(tr.find('.funcionais').val()) || 0;
+                var naoFuncionais = parseInt(tr.find('.nao-funcionais').val()) || 0;
+                var numeroTotal = funcionais + naoFuncionais;
+                tr.find('.numero-total-show').val(numeroTotal);
+                tr.find('.numero-total').val(numeroTotal);
+            });
         });
-    });
-</script>
+    </script>
 
 @endsection
