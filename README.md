@@ -13,7 +13,6 @@
         <td>Composer<td>
         <td>MySQL<td>
     </thead>
-
     <tbody>
         <td>8.*<td>
         <td>x10<td>
