@@ -12,6 +12,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/68898835?v=4" type="image/x-icon">
 </head>
 
 <body>
@@ -36,57 +40,57 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0 text-dark">
+                            <a href="#" onClick="mostrarAlerta()"  class="nav-link align-middle px-0 text-dark">
                                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Escola</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0 text-dark">
+                            <a href="#" onClick="mostrarAlerta()"  class="nav-link align-middle px-0 text-dark">
                                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Cursos</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0 text-dark">
+                            <a href="#" onClick="mostrarAlerta()"  class="nav-link align-middle px-0 text-dark">
                                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Docentes</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0 text-dark">
+                            <a href="#" onClick="mostrarAlerta()"  class="nav-link align-middle px-0 text-dark">
                                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Alunos</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0 text-dark">
+                            <a href="#" onClick="mostrarAlerta()"  class="nav-link align-middle px-0 text-dark">
                                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Relatórios</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0 text-dark">
+                            <a href="#" onClick="mostrarAlerta()"  class="nav-link align-middle px-0 text-dark">
                                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Perfis</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0 text-dark">
+                            <a href="#" onClick="mostrarAlerta()"  class="nav-link align-middle px-0 text-dark">
                                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Utilizadores</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0 text-dark">
+                            <a href="#" onClick="mostrarAlerta()"  class="nav-link align-middle px-0 text-dark">
                                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Configurações</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0 text-dark">
+                            <a href="#" onClick="mostrarAlerta()"  class="nav-link align-middle px-0 text-dark">
                                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Anos Lectivos</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0 text-dark">
+                            <a href="#"onClick="mostrarAlerta()"  class="nav-link align-middle px-0 text-dark">
                                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Atalhos</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 text-dark align-middle">
+                            <a href="#" onClick="mostrarAlerta()" class="nav-link px-0 text-dark align-middle">
                                 <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Sistema de
                                     Informação para ensino Técnico Profissional</span>
                             </a>
@@ -102,11 +106,11 @@
                             <span class="d-none d-sm-inline mx-1 text-dark">Utilizador</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#" onClick="mostrarAlerta()" >Perfil</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Terminar Sessão</a></li>
+                            <li><a class="dropdown-item" href="#" onClick="mostrarAlerta()" >Terminar Sessão</a></li>
                         </ul>
                     </div>
                 </div>
@@ -120,7 +124,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <script src="{{ asset('js/main.js') }}"></script>
+
+    <script>
+        function mostrarAlerta() {
+            Swal.fire({
+                title: 'Em desenvolvimento',
+                text: 'A funcionalidade ainda está em desenvolvimento.',
+                icon: 'info',
+                confirmButtonText: 'OK'
+            });
+        }
+
+        document.getElementById('menuEscola').addEventListener('click', function(event) {
+            event.preventDefault();
+            mostrarAlerta();
+        });
+    </script>
 </body>
 
 </html>

@@ -11,11 +11,9 @@
             <form action="{{ route('escola.atualizar') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <table class="table">
-                    <thead style="background: #C4C4C4">
+                    <thead style="background: #C4C4C4;">
                         <tr>
-                            <th scope="col" class="w-50">
-                                <h5>Designação</h5>
-                            </th>
+                            <th scope="col" class="w-50">Designação</th>
                             <th scope="col" class="w-20">Funcionais</th>
                             <th scope="col" class="w-20">Não Funcionais</th>
                             <th scope="col" class="w-20">Número total</th>
@@ -31,12 +29,15 @@
                                 <td><input type="number" class="form-control funcionais"
                                         name="salas[{{ $sala->id }}][funcionais]" value="{{ $sala->funcionais }}"
                                         @if ($key == 0) disabled @endif min="0"></td>
+
                                 <td><input type="number" class="form-control nao-funcionais"
                                         name="salas[{{ $sala->id }}][nao_funcionais]"
                                         value="{{ $sala->nao_funcionais }}"
                                         @if ($key == 0) disabled @endif min="0"></td>
 
                                 <td>
+
+                                @if ($key != 0)
                                     <input type="hidden" class="form-control numero-total"
                                         name="salas[{{ $sala->id }}][numero_total]" value="{{ $sala->numero_total }}"
                                         @if ($key != 0)  @endif min="0">
@@ -44,6 +45,17 @@
                                         name="salas-show[{{ $sala->id }}][numero_total]"
                                         value="{{ $sala->numero_total }}" @if ($key != 0) disabled @endif
                                         min="0">
+                                @else
+                                    <input type="hidden" class="form-control numero-total"
+                                    name="salas[{{ $sala->id }}][numero_total]" value="1"
+                                    @if ($key != 0)  @endif min="0">
+
+                                    <input type="number" class="form-control numero-total-show"
+                                        name="salas-show[{{ $sala->id }}][numero_total]"
+                                        value="{{ $sala->numero_total }}" @if ($key != 0) disabled @endif
+                                        min="0">
+
+                                @endif
                                 </td>
                             </tr>
                         @endforeach
